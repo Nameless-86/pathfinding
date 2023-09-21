@@ -10,10 +10,6 @@ Consultar enunciado en el campus virtual de la materia.
 4. Greedy Best First Search (GBFS).
 5. A* Search.
 
-## Requerimientos
-* Python 3.10 o superior (https://www.python.org/downloads/).
-* Pygame.
-
-## Licencia
-This project is licensed under the MIT License.
-# pathfinding
+##Versiones
+Python 3.11.4
+Pygame 2.5.1
