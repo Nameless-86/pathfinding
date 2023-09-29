@@ -31,7 +31,7 @@ class BreadthFirstSearch:
             return Solution(node, explored)
 
         # Initialize frontier with initial node
-        # No se si la queue funciona
+
         frontier = QueueFrontier()
         frontier.add(node)
 
