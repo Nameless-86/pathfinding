@@ -37,10 +37,10 @@ class DepthFirstSearch:
 
             if node.state not in explored.keys():
                 explored[node.state] = True
-                neighbors = grid.get_neighbours(node.state)
+                neighbours = grid.get_neighbours(node.state)
 
-                for action in neighbors.keys():
-                    new_state = neighbors[action]
+                for action in neighbours.keys():
+                    new_state = neighbours[action]
                     new_node = Node(
                         "",
                         new_state,
