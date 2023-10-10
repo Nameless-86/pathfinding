@@ -3,8 +3,6 @@ from ..models.frontier import QueueFrontier
 from ..models.solution import NoSolution, Solution
 from ..models.node import Node
 
-# import heapq
-
 
 class BreadthFirstSearch:
     @staticmethod
@@ -19,7 +17,6 @@ class BreadthFirstSearch:
         """
         # Initialize a node with the initial position
         node = Node("", state=grid.start, cost=0, parent=None, action=None)
-        end_state = grid.end
 
         # Initialize the explored dictionary to be empty
         explored = {}

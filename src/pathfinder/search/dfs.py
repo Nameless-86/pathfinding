@@ -17,7 +17,6 @@ class DepthFirstSearch:
         """
         # Initialize a node with the initial position
         node = Node("", state=grid.start, cost=0, parent=None, action=None)
-        end_state = grid.end
 
         # Initialize frontier with initial node
         frontier = StackFrontier()

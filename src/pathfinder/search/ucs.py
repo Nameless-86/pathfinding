@@ -19,9 +19,9 @@ class UniformCostSearch:
         node = Node("", grid.start, 0)
 
         # Initialize the explored dictionary to be empty
-        explored = {} 
-        
+        explored = {}
+
         # Add the node to the explored dictionary
         explored[node.state] = True
-        
+
         return NoSolution(explored)

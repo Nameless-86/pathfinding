@@ -2,6 +2,7 @@ from ..models.grid import Grid
 from ..models.frontier import PriorityQueueFrontier
 from ..models.solution import NoSolution, Solution
 from ..models.node import Node
+import math
 
 
 def heuristic(node_, target):

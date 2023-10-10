@@ -32,7 +32,6 @@ class GoRight:
         frontier.add(node)
 
         while True:
-
             #  Fail if the frontier is empty
             if frontier.is_empty():
                 return NoSolution(reached)
@@ -42,18 +41,20 @@ class GoRight:
 
             # Go right
             successors = grid.get_neighbours(node.state)
-            if 'right' in successors:
-
+            if "right" in successors:
                 # Get the successor
-                new_state = successors['right']
+                new_state = successors["right"]
 
                 # Check if the successor is not reached
                 if new_state not in reached:
-
                     # Initialize the son node
-                    new_node = Node("", new_state,
-                                    node.cost + grid.get_cost(new_state),
-                                    parent=node, action='right')
+                    new_node = Node(
+                        "",
+                        new_state,
+                        node.cost + grid.get_cost(new_state),
+                        parent=node,
+                        action="right",
+                    )
 
                     # Mark the successor as reached
                     reached[new_state] = True
